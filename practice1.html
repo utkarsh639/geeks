@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice1.css" />
+</head>
+<body>
+    <h1>GEEKSTER REGISTRATION FORM</h1>
+    <div class = "flud-container">
+    <form>
+        <h2>Basic Info</h2>
+    <input type="text" class="inline" name="f_name" placeholder = "First Name" />
+    <input type="text" class="inline" name="l_name" placeholder = "LAst Name" />
+    <br />
+    <input type="email" class="inline" name="email" placeholder = "Email Id" />
+    <input type="number" class="inline" name="No" placeholder = "Enter Number" />
+    <input type="date" name="date_of_birth" max="2022-01-01"  class="out"/>
+    <select name ="gender" class="out">
+        <option selected disabled>Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+    
+    <textarea name="address" placeholder="Address" class="out"></textarea>
+    <h2>Qualification Info</h2>
+    <select name="degree" class="out">
+        <option selected disabled> Select Degree</option>
+        <optgroup label="Bachelors">
+            <option>B.tech</option>
+            <option>B.E</option>
+            <option>B.Sc</option>
+        </optgroup>
+        <optgroup label="Masters">
+            <option>M.tech</option>
+            <option>M.E</option>
+            <option>M.Sc</option>
+        </optgroup>
+    </select>
+    <input type="text" name="college" placeholder="college name" class="out"/>
+    <input type="number" name="graduation" placeholder="Year of graduation" min="2020" max="2022" class="out"/>
+    <input type="number" name="per" placeholder="Percentage" min="0" max="100" step="0.1" class="out"/>
+    <input type="file" class="out"/>
+    <hr />
+    
+    <input class="inline" type="submit" value="Apply for Addmission" />
+    <input class="inline" type="reset" />
+</form>
+</div>
+</body>
+</html>
